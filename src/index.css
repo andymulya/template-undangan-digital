@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .h-cover {
+        @apply min-h-[100vh]
+    }
+}
