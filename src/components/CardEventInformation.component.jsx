@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 const CardEventInformation = ({ nameEvent, date, time, place }) => {
     return (
         <div className="font-semibold text-center">
@@ -10,3 +12,10 @@ const CardEventInformation = ({ nameEvent, date, time, place }) => {
 }
 
 export default CardEventInformation
+
+CardEventInformation.propTypes = {
+    nameEvent: PropTypes.string,
+    date: PropTypes.string,
+    time: PropTypes.string,
+    place: PropTypes.string
+}

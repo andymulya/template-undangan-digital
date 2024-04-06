@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 const HeroImage = ({ img, bingkai, style }) => {
     return (
         <div className='relative w-[300px] h-[300px]'>
@@ -10,3 +12,9 @@ const HeroImage = ({ img, bingkai, style }) => {
 }
 
 export default HeroImage
+
+HeroImage.propTypes = {
+  img: PropTypes.string,
+  bingkai: PropTypes.string,
+  style: PropTypes.string
+}

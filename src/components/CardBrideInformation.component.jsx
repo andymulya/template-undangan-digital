@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 const CardBrideInformation = ({ imageCover, name="Nama Mempelai", nameWali1="Nama Ayah", nameWali2="Nama Ibu", address="-" }) => {
     return (
         <div className="w-[300px] h-[350px] relative overflow-clip rounded-3xl bg-white shadow-md flex flex-col gap-5 group">
@@ -16,3 +18,11 @@ const CardBrideInformation = ({ imageCover, name="Nama Mempelai", nameWali1="Nam
 }
 
 export default CardBrideInformation
+
+CardBrideInformation.propTypes = {
+    imageCover: PropTypes.string,
+    name: PropTypes.string,
+    nameWali1: PropTypes.string,
+    nameWali2: PropTypes.string,
+    address: PropTypes.string
+}
