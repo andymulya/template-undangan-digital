@@ -1,10 +1,10 @@
-import heroPattern1 from './assets/png/bingkai_bunga.png'
+import heroPattern1 from './assets/webp/bingkai_bunga.webp'
 import imgAva1 from './assets/jpg/ava4.jpg'
 import imgAva2 from './assets/jpg/ava7.jpg'
-import imgSudut from './assets/png/sudut_bunga.png'
+import imgSudut from './assets/webp/sudut_bunga.webp'
 import HeroImage from './components/HeroImage.component'
-import heroPattern2 from './assets/png/bingkai2.png'
-import tepianAwan from './assets/png/tepian_awan.png'
+import heroPattern2 from './assets/webp/bingkai2.webp'
+import tepianAwan from './assets/webp/tepian_awan.webp'
 
 export default function App(){
   return (
