@@ -1,6 +1,8 @@
 import heroPattern1 from './assets/webp/bingkai_bunga.webp'
 import imgAva1 from './assets/jpg/ava4.jpg'
 import imgAva2 from './assets/jpg/ava7.jpg'
+import imgAva3 from './assets/jpg/ava3.jpg'
+import imgAva4 from './assets/jpg/ava2.jpg'
 import HeroImage from './components/HeroImage.component'
 import heroPattern2 from './assets/webp/bingkai2.webp'
 import CardBrideInformation from './components/CardBrideInformation.component'
@@ -60,8 +62,8 @@ export default function App(){
         <UpperSideFlower />
 
         <div className="z-20 flex flex-col gap-10 justify-center items-center py-20">
-          <CardBrideInformation imageCover={ imgAva1 } name="Andy Eka Mulya" nameWali1="Ayah Andy" nameWali2="Ibu Andy" address="Jawa Timur" />
-          <CardBrideInformation imageCover={ imgAva2 } name="Angelina Aisyah" nameWali1="Ayah Angel" nameWali2="Ibu Angel" address="Kalimantan Timur" />
+          <CardBrideInformation imageCover={ imgAva3 } name="Andy Eka Mulya" nameWali1="Ayah Andy" nameWali2="Ibu Andy" address="Jawa Timur" />
+          <CardBrideInformation imageCover={ imgAva4 } name="Angelina Aisyah" nameWali1="Ayah Angel" nameWali2="Ibu Angel" address="Kalimantan Timur" />
         </div>
 
         <LowerSideCloud />
