@@ -23,8 +23,8 @@ export default function App(){
           
           <div className="font-dancingScript font-bold text-5xl text-blue-900 w-[300px] px-20">
             <h1 className="text-left">Andy</h1>
-            <h1 className="text-right">
-              <span className="text-2xl text-black">&</span>
+            <h1 className="text-right text-nowrap">
+              <span className="text-3xl text-black">&</span>
               {" "}Angell
             </h1>
           </div>
