@@ -1,9 +1,10 @@
 import heroPattern1 from './assets/png/bingkai_bunga.png'
 import imgAva1 from './assets/jpg/ava4.jpg'
 import imgAva2 from './assets/jpg/ava7.jpg'
-import imgSudut from "./assets/png/sudut_bunga.png"
+import imgSudut from './assets/png/sudut_bunga.png'
 import HeroImage from './components/HeroImage.component'
 import heroPattern2 from './assets/png/bingkai2.png'
+import tepianAwan from './assets/png/tepian_awan.png'
 
 export default function App(){
   return (
@@ -24,21 +25,28 @@ export default function App(){
 
         <HeroImage img={ imgAva1 } bingkai={ heroPattern1 } style={"w-52 h-52 top-12 right-10"}/>
 
-        <p className="font-dancingScript font-extrabold text-blue-800 text-3xl">04 Maret 2025</p>
-        <p className="px-5 font-semibold text-blue-950">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara kami.</p>
+        <div className="z-20">
+          <p className="font-dancingScript font-extrabold text-blue-800 text-3xl">04 Maret 2025</p>
+          <p className="px-5 font-semibold text-blue-950">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara kami.</p>
+        </div>
+        <img src={ tepianAwan } className="absolute -bottom-24 z-10" />
       </section>
 
       {/* Slide 2 */}
-      <section className="h-cover bg-gradient-to-t from-white to-blue-300 py-10 px-5 flex flex-col items-center text-center gap-5">
-        <div className="font-dancingScript text-4xl font-extrabold text-blue-900">
-          <h1>The Wedding</h1>
-          <p className="text-black">of</p>
-          <h2>Andy & Angell</h2>
-        </div>
+      <section className="h-cover relative bg-gradient-to-t from-white to-blue-300 py-10 px-5 flex flex-col items-center text-center gap-5 overflow-clip">
+        <img src={ tepianAwan } className="absolute -top-20 rotate-180 z-10" />
+        
+        <div className="z-20 flex flex-col items-center">
+          <div className="font-dancingScript text-4xl font-extrabold text-blue-900">
+            <h1>The Wedding</h1>
+            <p className="text-black">of</p>
+            <h2>Andy & Angell</h2>
+          </div>
 
-        <p className="mt-10">Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
-        <HeroImage img={ imgAva2 } bingkai={ heroPattern2 } style={"w-44 h-44 top-[75px] right-14"} />
-        <p>Tuhan kami, Tuhan yang kami kasihi serta kami sembah. Tuhan pemilik kehidupan serta cinta kasih, kami memohon berkat kepada-Mu untuk pengantin wanita dan pengantin pria pada kehidupan bersama mereka sebagai sepasang kekasih yang dimadu cinta.</p>
+          <p className="mt-10">Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
+          <HeroImage img={ imgAva2 } bingkai={ heroPattern2 } style={"w-44 h-44 top-[75px] right-14"} />
+          <p>Tuhan kami, Tuhan yang kami kasihi serta kami sembah. Tuhan pemilik kehidupan serta cinta kasih, kami memohon berkat kepada-Mu untuk pengantin wanita dan pengantin pria pada kehidupan bersama mereka sebagai sepasang kekasih yang dimadu cinta.</p>
+        </div>
       </section>
 
     </div>
