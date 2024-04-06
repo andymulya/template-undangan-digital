@@ -14,7 +14,7 @@ import CardEventInformation from './components/CardEventInformation.component'
 
 export default function App(){
   return (
-    <div className="min-w-[350px] max-w-[550px] m-auto">
+    <div className="min-w-[350px] max-w-[550px] m-auto font-playfairDisplay tracking-wider">
       
       {/* Slide 1 */}
       <section className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
@@ -88,20 +88,45 @@ export default function App(){
       <section className="h-cover relative bg-gradient-to-t from-blue-300 to-white flex flex-col items-center text-center gap-5 overflow-clip">
         <UpperSideFlower />
 
-        <div className="z-20 px-10 py-28 flex flex-col gap-10 font-bold text-4xl font-dancingScript text-blue-950">
+        <div className="z-20 px-10 py-28 flex flex-col gap-10 font-semibold font-playfairDisplay">
           
+          <h1 className="text-4xl font-bold font-dancingScript text-blue-800">Place Information</h1>
+
           <div>
-            <h1>Tempat Akad</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.017750674308!2d113.86408641001186!3d-7.007192392964941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e42cd287a7bb%3A0xe831855da240c59d!2sGedung%20Adi%20Poday%20Sumenep!5e0!3m2!1sid!2sid!4v1712398153897!5m2!1sid!2sid" allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[300px] border-0 my-5 rounded-xl"></iframe>
+            <h2>Tempat Akad</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.017750674308!2d113.86408641001186!3d-7.007192392964941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e42cd287a7bb%3A0xe831855da240c59d!2sGedung%20Adi%20Poday%20Sumenep!5e0!3m2!1sid!2sid!4v1712398153897!5m2!1sid!2sid" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[300px] border-0 my-5 rounded-xl"></iframe>
           </div>
           
           <div>
-            <h1>Tempat Resepsi</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.017750674308!2d113.86408641001186!3d-7.007192392964941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e42cd287a7bb%3A0xe831855da240c59d!2sGedung%20Adi%20Poday%20Sumenep!5e0!3m2!1sid!2sid!4v1712398153897!5m2!1sid!2sid" allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[300px] border-0 my-5 rounded-xl"></iframe>
+            <h2>Tempat Resepsi</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.017750674308!2d113.86408641001186!3d-7.007192392964941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e42cd287a7bb%3A0xe831855da240c59d!2sGedung%20Adi%20Poday%20Sumenep!5e0!3m2!1sid!2sid!4v1712398153897!5m2!1sid!2sid" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[300px] border-0 my-5 rounded-xl"></iframe>
           </div>
         </div>
 
         <LowerSideCloud />
+      </section>
+
+      <section className="h-cover relative bg-gradient-to-t from-white to-blue-300 flex flex-col items-center text-center gap-5 overflow-clip">
+        <UpperSideCloud />
+
+        <div className="py-10 px-96 bg-blue-800/20 absolute top-56 z-20">
+          <div className="py-8 px-96 bg-blue-800/70">
+            <div className="py-7 px-96 bg-blue-800/50">
+            </div>
+          </div>
+        </div>
+
+        <div className="z-20 py-20 flex flex-col justify-center items-center gap-7 px-10">
+          <HeroImage img={ imgAva2 } bingkai={ heroPattern2 } style={"w-44 h-44 top-[75px] right-14"} />
+
+          <p className="mt-16">Merupakan Suatu Kebahagiaan dan Kehormatan bagi Kami, Apabila Bapak/Ibu/Saudara/i, Berkenan Hadir di Acara kami.</p>
+          <h2 className="font-semibold font-playfairDisplay text-xl text-blue-950 mt-8">Terima Kasih</h2>
+          <h1 className="font-bold font-dancingScript text-[40px] text-blue-800">
+            Andy <span className="text-[50px]">&</span> Angel
+          </h1>
+        </div>
+      
+        <LowerSideFlower />
       </section>
 
     </div>

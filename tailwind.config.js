@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        dancingScript: ["Dancing Script"]
+        dancingScript: ["Dancing Script"],
+        playfairDisplay: ["Playfair Display"]
       }
     },
   },
