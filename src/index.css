@@ -6,4 +6,12 @@
     .h-cover {
         @apply min-h-[100vh]
     }
+
+    .hide{
+        @apply opacity-0 pointer-events-none duration-100;
+    }
+
+    .show{
+        @apply opacity-100 pointer-events-auto duration-200;
+    }
 }

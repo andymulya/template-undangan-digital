@@ -11,13 +11,14 @@ import LowerSideFlower from './components/LowerSideFlower.component'
 import UpperSideCloud from './components/UpperSideCloud.component'
 import LowerSideCloud from './components/LowerSideCloud.component'
 import CardEventInformation from './components/CardEventInformation.component'
+import ButtonMenu from './components/ButtonMenu'
 
 export default function App(){
   return (
-    <div className="min-w-[350px] max-w-[550px] m-auto font-playfairDisplay tracking-wider">
+    <div className="min-w-[350px] relative max-w-[550px] m-auto font-playfairDisplay tracking-wider">
       
       {/* Slide 1 */}
-      <section className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
+      <section id='home' className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
         <div className="z-20 flex flex-col items-center">
           <UpperSideFlower />
           
@@ -70,7 +71,7 @@ export default function App(){
       </section>
 
       {/* Slide 4 */}
-      <section className="h-cover relative bg-gradient-to-t from-white to-blue-300 flex flex-col items-center text-center gap-5 overflow-clip" >
+      <section id='calendar' className="h-cover relative bg-gradient-to-t from-white to-blue-300 flex flex-col items-center text-center gap-5 overflow-clip" >
         <UpperSideCloud />
 
         <div className="z-20 flex flex-col gap-15 justify-center items-center py-10">
@@ -85,7 +86,8 @@ export default function App(){
         <LowerSideFlower />
       </section>
 
-      <section className="h-cover relative bg-gradient-to-t from-blue-300 to-white flex flex-col items-center text-center gap-5 overflow-clip">
+      {/* Slide 5 */}
+      <section id='map' className="h-cover relative bg-gradient-to-t from-blue-300 to-white flex flex-col items-center text-center gap-5 overflow-clip">
         <UpperSideFlower />
 
         <div className="z-20 px-10 py-28 flex flex-col gap-10 font-semibold font-playfairDisplay">
@@ -106,6 +108,7 @@ export default function App(){
         <LowerSideCloud />
       </section>
 
+      {/* Slide 6 */}
       <section className="h-cover relative bg-gradient-to-t from-white to-blue-300 flex flex-col items-center text-center gap-5 overflow-clip">
         <UpperSideCloud />
 
@@ -129,6 +132,7 @@ export default function App(){
         <LowerSideFlower />
       </section>
 
+      <ButtonMenu />
     </div>
   )
 }
