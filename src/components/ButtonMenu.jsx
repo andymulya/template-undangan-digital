@@ -1,7 +1,7 @@
 import { useState } from "react"
 import LinkMenu from "./LinkMenu"
 import { IconCalendar, IconHome, IconMap } from "./Icons"
-import sound from "../assets/mp3/sound.mp3"
+
 
 const ButtonMenu = () => {
     
@@ -16,10 +16,6 @@ const ButtonMenu = () => {
                 <LinkMenu id={"#home"} isActive={ isActive } duration={"duration-700"}>
                     <IconHome />
                 </LinkMenu>
-
-                <audio loop controls autoPlay={true}>
-                    <source src={ sound } type="audio/mpeg" />
-                </audio>
                 
                 <LinkMenu id={"#calendar"} isActive={ isActive } duration={"duration-150"}>
                     <IconCalendar />

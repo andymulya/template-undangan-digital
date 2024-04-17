@@ -12,10 +12,14 @@ import UpperSideCloud from './components/UpperSideCloud.component'
 import LowerSideCloud from './components/LowerSideCloud.component'
 import CardEventInformation from './components/CardEventInformation.component'
 import ButtonMenu from './components/ButtonMenu'
+import sound from "./assets/mp3/sound.mp3"
 
 export default function App(){
   return (
     <div className="min-w-[350px] relative max-w-[550px] m-auto font-playfairDisplay tracking-wider">
+      <audio loop controls autoPlay={true}>
+          <source src={ sound } type="audio/mpeg" />
+      </audio>
       
       {/* Slide 1 */}
       <section id='home' className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
