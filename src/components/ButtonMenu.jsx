@@ -8,10 +8,10 @@ const ButtonMenu = () => {
     const [isActive, setIsActive] = useState(false)
 
     const handleClick = () => setIsActive(state => !state)
-
+    const handleBlur = () => setTimeout(() => setIsActive(false), 200)
     
     return (
-        <div className="absolute right-36 z-20">
+        <div className="absolute right-36 z-20" onBlur={ handleBlur }>
             <section className="fixed bottom-0">
                 <LinkMenu id={"#home"} isActive={ isActive } duration={"duration-300"}>
                     <IconHome />
