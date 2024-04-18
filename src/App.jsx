@@ -12,15 +12,30 @@ import UpperSideCloud from './components/UpperSideCloud.component'
 import LowerSideCloud from './components/LowerSideCloud.component'
 import CardEventInformation from './components/CardEventInformation.component'
 import ButtonMenu from './components/ButtonMenu'
-import sound from "./assets/mp3/sound.mp3"
+import { IconMusic } from './components/Icons'
+import { useRef, useState } from 'react'
+import sound from './assets/mp3/sound.mp3'
+
 
 export default function App(){
+
+  const [isPlay, setIsPlay] = useState(false)
+  const audioRef = useRef()
+
+  const handlePlay = () => {
+    audioRef.current.play()
+    setIsPlay(true)
+  }
+
+  const handlePause = () => {
+    audioRef.current.pause()
+    setIsPlay(false)
+  }
+
   return (
     <div className="min-w-[350px] relative max-w-[550px] m-auto font-playfairDisplay tracking-wider">
-      <audio loop controls autoPlay={true}>
-          <source src={ sound } type="audio/mpeg" />
-      </audio>
-      
+      <audio loop autoPlay src={ sound } ref={ audioRef } />
+
       {/* Slide 1 */}
       <section id='home' className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
         <div className="z-20 flex flex-col items-center">
@@ -136,7 +151,16 @@ export default function App(){
         <LowerSideFlower />
       </section>
 
-      <ButtonMenu />
+      <section className="absolute right-36 z-20">
+        <ButtonMenu />
+
+        <div className="relative -right-12">
+          <button onClick={ (isPlay) ? handlePause : handlePlay } className={`bg-blue-800 flex justify-center items-center w-16 h-10 font-bold text-white rounded-full fixed top-5 shadow-md ${isPlay && "bg-slate-400"}`}>
+              <IconMusic />
+          </button>
+        </div>
+      </section>
+
     </div>
   )
 }
