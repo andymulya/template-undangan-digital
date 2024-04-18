@@ -34,7 +34,7 @@ export default function App(){
 
   return (
     <div className="min-w-[350px] relative max-w-[550px] m-auto font-playfairDisplay tracking-wider">
-      <audio loop autoPlay src={ sound } ref={ audioRef } />
+      <audio loop src={ sound } ref={ audioRef } />
 
       {/* Slide 1 */}
       <section id='home' className="h-cover relative overflow-clip flex flex-col justify-center items-center text-center gap-5 py-5 bg-gradient-to-t from-blue-300 to-white">
