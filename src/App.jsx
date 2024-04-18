@@ -155,7 +155,7 @@ export default function App(){
         <ButtonMenu />
 
         <div className="relative -right-12">
-          <button onClick={ (isPlay) ? handlePause : handlePlay } className={`bg-blue-800 flex justify-center items-center w-16 h-10 font-bold text-white rounded-full fixed top-5 shadow-md ${isPlay && "bg-slate-400"}`}>
+          <button onClick={ (isPlay) ? handlePause : handlePlay } className={`bg-blue-800 flex justify-center items-center w-16 h-10 font-bold text-white rounded-full fixed top-5 shadow-md transition-all ${isPlay && "bg-slate-400 scale-90"}`}>
               <IconMusic />
           </button>
         </div>
